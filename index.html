@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Content</h1>
+        <h3>Enter details below to generate content:</h3>
+        <form id="contentForm">
+            <label for="inputText">Content Topic:</label>
+            <input type="text" id="inputText" name="inputText" required>
+
+            <label for="numWords">Number of Words:</label>
+            <input type="text" id="numWords" name="numWords" required>
+
+            <label for="contentType">Genre of Content:</label>
+            <select id="contentType" name="contentType">
+                <option value="Article">Article</option>
+                <option value="Speech">Speech</option>
+                <option value="Story">Story</option>
+                <option value="Poem">Poem</option>
+            </select>
+
+            <button type="submit">Generate Content</button>
+        </form>
+        <div id="error" class="error"></div>
+        <div id="response"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
